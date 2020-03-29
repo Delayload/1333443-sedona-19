@@ -30,6 +30,87 @@
     </header>
 
     <main class="form-main">
+      <section class="intro">
+        <h1 class="intro__heading">Оставьте свой отзыв</h1>
+        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+
+      <form class="filter">
+        <h2 class="filter__heading visually-hidden">Форма с фильтрами</h2>
+        <fieldset class="filter__name-fieldset">
+          <legend class="filter__name-heading">Представьтесь:</legend>
+          <ul class="filter__name-list">
+            <li class="filter__name-item">
+              <label class="filter__name-label" for="first-name">Имя*:</label>
+              <input class="filter__name-input" id="first-name" type="text" placeholder="Петр">
+            </li>
+            <li class="filter__name-item">
+              <label class="filter__name-label" for="second-name">Фамилия*:</label>
+              <input class="filter__name-input" id="second-name" type="text" placeholder="Иванов">
+            </li>
+            <li class="filter__name-item">
+              <label class="filter__name-label" for="third-name">Отчество:</label>
+              <input class="filter__name-input" id="third-name" type="text" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__contacts-fieldset">
+          <legend class="filter__contacts-heading">Контактная информация:</legend>
+          <ul class="filter__contacts-list">
+            <li class="filter__contacts-item">
+              <label class="filter__contacts-label" for="phone">Контактный телефон*:</label>
+              <input class="filter__contacts-input" id="phone" type="tel" placeholder="Введите телефон">
+            </li>
+            <li class="filter__contacts-item">
+              <label class="filter__contacts-label" for="email">Электронная почта*:</label>
+              <input class="filter__contacts-input" id="email" type="email" placeholder="Введите e-mail">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__rating-fieldset">
+          <legend class="filter__rating-heading">Ваше общее впечатление:</legend>
+          <ul class="filter__rating-list">
+            <li class="filter__rating-item">
+              <input class="filter__rating-input" type="checkbox" id="positive" name="rating" value="Положительное">
+              <label class="filter__rating-label" for="positive">Скорее положительное</label>
+            </li>
+            <li class="filter__rating-item">
+              <input class="filter__rating-input" type="checkbox" id="negative" name="rating" value="Отрицательное">
+              <label class="filter__rating-label" for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="filter__rating-item">
+              <input class="filter__rating-input" type="checkbox" id="neutral" name="rating" value="Нейтральное">
+              <label class="filter__rating-label" for="neutral">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__attractions-fieldset">
+          <legend class="filter__attractions-heading">Посещенные достопримечательности:</legend>
+          <ul  class="filter__attractions-list">
+            <li class="filter__attractions-item">
+              <input class="filter__attractions-input" type="radio" id="bridge" name="attractions" value="Мост">
+              <label class="filter__attractions-label" for="bridge">Мост Дьявола</label>
+            </li>
+            <li class="filter__attractions-item">
+              <input class="filter__attractions-input" type="radio" id="hill" name="attractions" value="Гора">
+              <label class="filter__attractions-label" for="hill">Гора-Колокол</label>
+            </li>
+            <li class="filter__attractions-item">
+              <input class="filter__attractions-input" type="radio" id="park" name="attractions" value="Парк">
+              <label class="filter__attractions-label" for="park">Слайд-парк</label>
+            </li>
+            <li class="filter__attractions-item">
+              <input class="filter__attractions-input" type="radio" id="rock" name="attractions" value="Скалы">
+              <label class="filter__attractions-label" for="rock">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__comment-fieldset">
+          <legend class="filter__comment-heading">Опишите свои эмоции:</legend>
+          <textarea class="filter__comment-text" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="filter-__button" type="submit">Отправить отзыв</button>
+      </form>
 
     </main>
 
