@@ -1,0 +1,61 @@
+.searching {
+  .font-ptsans();
+}
+
+.searching__heading {
+  .font(21px, bold, 26px);
+  text-align: center;
+  color: @black;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.searching__desc {
+  .font(14px, normal, 24px);
+  text-align: center;
+  color: @black-two;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.searching__button {
+  .font(21px, bold, 26px);
+  text-align: center;
+  color: @white;
+  text-transform: uppercase;
+  border: none;
+  background-color: @light-grey-blue;
+  padding: 17px 26px;
+  margin: 0 20px;
+  margin-bottom: 49px;
+}
+
+.searching__text-wrap {
+  margin: 0 28px;
+  margin-top: 33px;
+  margin-bottom: 40px;
+}
+
+.searching__map {
+  margin-bottom: 10px;
+
+  z-index: 1;
+}
+
+.searching__map-container {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-map-marker.svg");
+    top: 161px;
+    left: 146px;
+    z-index: 2;
+    width: 27px;
+    height: 27px;
+  }
+}

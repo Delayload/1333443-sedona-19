@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <a class="main-nav__logo" href="index.html">Главная>
+            <a class="main-nav__logo" href="index.html">Главная
                 <img class="main-nav__logo-image" src="https://via.placeholder.com/150x150" width="102" height="83" alt="Логотип Седона">
             </a>
             <ul class="main-nav__list">
@@ -34,55 +36,58 @@
         <h1 class="intro__heading">Оставьте свой отзыв</h1>
         <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
+      <section class="recall">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <form class="recall__filter">
+          <h2 class="recall__heading visually-hidden">Форма с фильтрами</h2>
+          <fieldset class="recall__name-fieldset">
+            <legend class="recall__name-heading">Представьтесь:</legend>
+            <label class="recall__name-label" for="first-name">Имя*:</label>
+            <input class="recall__name-input" id="first-name" type="text" placeholder="Петр">
+            <label class="recall__name-label" for="second-name">Фамилия*:</label>
+            <input class="recall__name-input" id="second-name" type="text" placeholder="Иванов">
+            <label class="recall__name-label" for="third-name">Отчество:</label>
+            <input class="recall__name-input" id="third-name" type="text" placeholder="Александрович">
+          </fieldset>
+          <fieldset class="recall__contacts-fieldset">
+            <legend class="recall__contacts-heading">Контактная информация:</legend>
+            <label class="recall__contacts-label" for="phone">Контактный телефон*:</label>
+            <input class="recall__contacts-input" id="phone" type="tel" placeholder="Введите телефон">
+            <label class="recall__contacts-label" for="email">Электронная почта*:</label>
+            <input class="recall__contacts-input" id="email" type="email" placeholder="Введите e-mail">
+          </fieldset>
+          <fieldset class="recall__rating-fieldset">
+            <legend class="recall__rating-heading">Ваше общее впечатление:</legend>
+            <input class="recall__rating-input" type="checkbox" id="positive" name="rating" value="Положительное">
+            <label class="recall__rating-label" for="positive">Скорее положительное</label>
+            <input class="recall__rating-input" type="checkbox" id="negative" name="rating" value="Отрицательное">
+            <label class="recall__rating-label" for="negative">Скорее отрицательное</label>
+            <input class="recall__rating-input" type="checkbox" id="neutral" name="rating" value="Нейтральное">
+            <label class="recall__rating-label" for="neutral">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset class="recall__attractions-fieldset">
+            <legend class="recall__attractions-heading">Посещенные достопримечательности:</legend>
+            <input class="recall__attractions-input" type="radio" id="bridge" name="attractions" value="Мост">
+            <label class="recall__attractions-label" for="bridge">Мост Дьявола</label>
+            <input class="recall__attractions-input" type="radio" id="hill" name="attractions" value="Гора">
+            <label class="recall__attractions-label" for="hill">Гора-Колокол</label>
+            <input class="recall__attractions-input" type="radio" id="park" name="attractions" value="Парк">
+            <label class="recall__attractions-label" for="park">Слайд-парк</label>
+            <input class="recall__attractions-input" type="radio" id="rock" name="attractions" value="Скалы">
+            <label class="recall__attractions-label" for="rock">Красные скалы</label>
+          </fieldset>
+          <fieldset class="recall__comment-fieldset">
+            <legend class="recall__comment-heading">Опишите свои эмоции:</legend>
+            <textarea class="recall__comment-text" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="recall-__button" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
 
-      <form class="filter">
-        <h2 class="filter__heading visually-hidden">Форма с фильтрами</h2>
-        <fieldset class="filter__name-fieldset">
-          <legend class="filter__name-heading">Представьтесь:</legend>
-          <label class="filter__name-label" for="first-name">Имя*:</label>
-          <input class="filter__name-input" id="first-name" type="text" placeholder="Петр">
-          <label class="filter__name-label" for="second-name">Фамилия*:</label>
-          <input class="filter__name-input" id="second-name" type="text" placeholder="Иванов">
-          <label class="filter__name-label" for="third-name">Отчество:</label>
-          <input class="filter__name-input" id="third-name" type="text" placeholder="Александрович">
-        </fieldset>
-        <fieldset class="filter__contacts-fieldset">
-          <legend class="filter__contacts-heading">Контактная информация:</legend>
-          <label class="filter__contacts-label" for="phone">Контактный телефон*:</label>
-          <input class="filter__contacts-input" id="phone" type="tel" placeholder="Введите телефон">
-          <label class="filter__contacts-label" for="email">Электронная почта*:</label>
-          <input class="filter__contacts-input" id="email" type="email" placeholder="Введите e-mail">
-        </fieldset>
-        <fieldset class="filter__rating-fieldset">
-          <legend class="filter__rating-heading">Ваше общее впечатление:</legend>
-          <input class="filter__rating-input" type="checkbox" id="positive" name="rating" value="Положительное">
-          <label class="filter__rating-label" for="positive">Скорее положительное</label>
-          <input class="filter__rating-input" type="checkbox" id="negative" name="rating" value="Отрицательное">
-          <label class="filter__rating-label" for="negative">Скорее отрицательное</label>
-          <input class="filter__rating-input" type="checkbox" id="neutral" name="rating" value="Нейтральное">
-          <label class="filter__rating-label" for="neutral">Затрудняюсь ответить</label>
-        </fieldset>
-        <fieldset class="filter__attractions-fieldset">
-          <legend class="filter__attractions-heading">Посещенные достопримечательности:</legend>
-          <input class="filter__attractions-input" type="radio" id="bridge" name="attractions" value="Мост">
-          <label class="filter__attractions-label" for="bridge">Мост Дьявола</label>
-          <input class="filter__attractions-input" type="radio" id="hill" name="attractions" value="Гора">
-          <label class="filter__attractions-label" for="hill">Гора-Колокол</label>
-          <input class="filter__attractions-input" type="radio" id="park" name="attractions" value="Парк">
-          <label class="filter__attractions-label" for="park">Слайд-парк</label>
-          <input class="filter__attractions-input" type="radio" id="rock" name="attractions" value="Скалы">
-          <label class="filter__attractions-label" for="rock">Красные скалы</label>
-        </fieldset>
-        <fieldset class="filter__comment-fieldset">
-          <legend class="filter__comment-heading">Опишите свои эмоции:</legend>
-          <textarea class="filter__comment-text" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
-        <button class="filter-__button" type="submit">Отправить отзыв</button>
-      </form>
     </main>
 
     <footer class="page-footer">
-      <p class="footer__tag">#VisitsSedona</p>
+      <p class="footer__tag">#VisitSedona</p>
       <ul class="social__list">
           <li class="social__item">
               <a class="social__link social__link--twitter" href="">Мы в Твиттере</a>
