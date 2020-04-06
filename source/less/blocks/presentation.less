@@ -6,7 +6,7 @@
   .font(18px, bold, 26px);
   text-align: center;
   text-transform: uppercase;
-  color: @black;
+  color: @main-text-color;
   margin: 0;
   margin-bottom: 37px;
 }
@@ -15,11 +15,122 @@
   .font(14px, normal, 24px);
   text-align: center;
   text-transform: uppercase;
-  color: @black-two;
+  color: @side-text-color;
   margin: 0;
 }
 
 .presentation__text-wrap {
   width: 235px;
   margin: 40px auto;
+}
+
+.presentation__video {
+  position: relative;
+}
+
+.presentation__img {
+  z-index: 1;
+}
+
+.presentation__volume-block {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  bottom: 70px;
+  left: 21px;
+  width: 280px;
+  height: 45px;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.presentation__volume {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  margin: 0 auto;
+  width: 235px;
+  height: 3px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.presentation__slider {
+  position: absolute;
+  top: 18px;
+  left: 78px;
+  width: 9px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.presentation__controls {
+  background-color: rgba(242, 242, 242);
+  width: 280px;
+  height: 66px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.presentation__back {
+  font-size: 0;
+  height: 20px;
+  margin-left: 25px;
+  widows: 16px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-video-replay.svg");
+  background-repeat: no-repeat;
+  padding-left: 11px;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.presentation__subtitle {
+  font-size: 0;
+  height: 20px;
+  width: 32px;
+  margin-left: 122px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-video-subtitles.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.presentation__full {
+  font-size: 0;
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-video-fullscreen.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

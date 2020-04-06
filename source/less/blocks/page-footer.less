@@ -6,7 +6,7 @@
   .font(21px, bold, 26px);
   text-align: center;
   text-transform: uppercase;
-  color: @black;
+  color: @main-text-color;
   margin: 30px auto 40px auto;
 }
 
@@ -21,7 +21,7 @@
   .font(14px, normal, 26px);
   text-align: center;
   text-transform: uppercase;
-  color: @black;
+  color: @main-text-color;
   margin: 0;
   margin-right: 11px;
 }
@@ -29,6 +29,16 @@
 .copyright__link,
 .social__link {
   font-size: 0;
+}
+
+.copyright__link {
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
 }
 
 .social__list {
@@ -39,15 +49,23 @@
 
 .social__item {
   margin-right: 6px;
-  width: 46px;
-  height: 48px;
-  background-color: @light-grey-blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .social__link {
-  margin: 0 auto;
+  background-color: @background-color;
+  display: flex;
+  align-items: center;
   fill: white;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    fill-opacity: 0.3;
+  }
 }
