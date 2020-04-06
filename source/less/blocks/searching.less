@@ -5,7 +5,7 @@
 .searching__heading {
   .font(21px, bold, 26px);
   text-align: center;
-  color: @black;
+  color: @main-text-color;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 24px;
@@ -14,7 +14,7 @@
 .searching__desc {
   .font(14px, normal, 24px);
   text-align: center;
-  color: @black-two;
+  color: @side-text-color;
   text-transform: uppercase;
   margin: 0;
 }
@@ -22,13 +22,26 @@
 .searching__button {
   .font(21px, bold, 26px);
   text-align: center;
-  color: @white;
+  color: @alt-text-color;
   text-transform: uppercase;
   border: none;
-  background-color: @light-grey-blue;
+  background-color: @background-color;
   padding: 17px 26px;
   margin: 0 20px;
   margin-bottom: 49px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .searching__text-wrap {

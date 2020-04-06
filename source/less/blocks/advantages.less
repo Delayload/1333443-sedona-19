@@ -4,7 +4,7 @@
 
 .text-heading {
   .font(18px, bold, 26px);
-  color: @black;
+  color: @main-text-color;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -15,7 +15,7 @@
 .text-desc {
   .font(14px, normal, 21px);
   text-align: center;
-  color: @black-two;
+  color: @side-text-color;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 25px;
@@ -24,7 +24,7 @@
 .features__heading {
   .font(18px, bold, 26px);
   text-align: left;
-  color: @black;
+  color: @main-text-color;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 18px;
@@ -33,7 +33,7 @@
 .features__desc {
   .font(14px, normal, 21px);
   text-align: left;
-  color: @black-two;
+  color: @side-text-color;
   text-transform: uppercase;
   margin: 0;
 }
@@ -75,7 +75,7 @@
 }
 
 .advantages__item--blue {
-  background-color: @light-grey-blue;
+  background-color: @background-color;
   padding: 0;
   margin: 0;
   border: none;
@@ -93,13 +93,15 @@
   }
 
   &:nth-of-type(2) {
+    padding-top: 45px;
+
     &::before {
       position: absolute;
       content: "";
       background-image: url("../img/photo-bridge-mobile@1x.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-      top: 202px;
+      top: 247px;
       width: 320px;
       height: 260px;
       left: 0;
@@ -126,8 +128,32 @@
   margin-bottom: 40px;
   margin-left: 70px;
   margin-right: 40px;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.features-item__house {
+  position: absolute;
+  top: 0;
+  left: -48px;
+  fill: @background-color;
+  width: 39px;
+  height: 37px;
+}
+
+.features-item__present {
+  position: absolute;
+  top: 0;
+  left: -48px;
+  fill: @background-color;
+}
+
+.features-item__food {
+  position: absolute;
+  top: 0;
+  left: -48px;
+  fill: @background-color;
 }
