@@ -1,5 +1,7 @@
 .recall {
   .font-ptsans();
+  max-width: @mobile-width;
+  margin: 0 auto;
 }
 
 .recall__name-heading,
@@ -11,6 +13,7 @@
   text-align: center;
   color: @main-text-color;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .recall__name-label,
@@ -19,6 +22,7 @@
   text-align: left;
   color: @side-text-color;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .recall__name-input,
@@ -30,6 +34,14 @@
   text-align: left;
   color: @main-text-color;
   margin: 0;
+}
+
+.recall__rating-label {
+  padding-left: 73px;
+}
+
+.recall__attractions-label {
+  padding-left: 75px;
 }
 
 .recall__name-fieldset {
@@ -124,10 +136,19 @@
 
 .recall__rating-item {
   display: flex;
+  position: relative;
+  margin-bottom: 23px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .recall__rating-input {
   margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .recall__attractions-fieldset {
@@ -143,10 +164,18 @@
 .recall__attractions-item {
   display: flex;
   margin-bottom: 34px;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.recall__attractions-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
 .recall__attractions-heading {
