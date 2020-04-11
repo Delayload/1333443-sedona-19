@@ -1,5 +1,7 @@
 .photos {
   .font-ptsans();
+  max-width: @mobile-width;
+  margin: 0 auto;
 }
 
 .photos__heading,
@@ -40,15 +42,157 @@
 }
 
 .photos__likes-logo {
-  background-color: white;
-  background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
-  padding-top: 20px;
-  padding-left: 23px;
   border: none;
+  fill: black;
+  background-color: transparent;
 }
 
 .photos__likes-count {
   padding-left: 7px;
+}
+
+.photos__img-mobile {
+  display: block;
+}
+
+.photos__img-tablet {
+  display: none;
+}
+
+.photos__img-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .photos {
+    max-width: @tablet-width;
+  }
+
+  .photos__img-tablet {
+    display: block;
+    width: 324px;
+    height: 267px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .photos__img-mobile {
+    display: none;
+  }
+
+  .photos__img-desktop {
+    display: none;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 648px;
+  }
+
+  .photos__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 324px;
+    padding-top: 265px;
+    border: none;
+  }
+
+  .photos__item:first-of-type {
+    width: 648px;
+    padding-top: 400px;
+  }
+
+  .photos__item:first-of-type .photos__img-tablet {
+    width: 648px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .photos__item-wrap {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .photos__heading {
+    margin: 0;
+  }
+
+  .photos__author {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos {
+    max-width: @desktop-width;
+  }
+
+  .photos__img-tablet {
+    display: none;
+  }
+
+  .photos__img-desktop {
+    display: block;
+    width: 400px;
+    height: 267px;
+    position: relative;
+  }
+
+  .photos__list {
+    width: 1200px;
+  }
+
+  .photos__item {
+    width: 400px;
+    padding-top: 0;
+  }
+
+  .photos__item:first-of-type {
+    padding-top: 0;
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photos__item:first-of-type .photos__img-desktop {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .photos__item-wrap {
+    margin-top: -88px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    color: white;
+  }
+
+  .photos__heading,
+  .photos__author,
+  .photos__likes-count {
+    color: inherit;
+    opacity: 1;
+  }
+
+  .photos__likes-logo {
+    fill: white;
+    opacity: 1;
+  }
 }
