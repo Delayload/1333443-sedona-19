@@ -23,6 +23,9 @@
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="photo.html">Фото и видео</a>
                 </li>
+                <li class="main-nav__item">
+
+                </li>
                 <li class="main-nav__item main-nav__item--active">
                     <a class="main-nav__link">Форма отзыва</a>
                 </li>
@@ -48,73 +51,80 @@
           <fieldset class="recall__name-fieldset">
             <legend class="visually-hidden">Представьтесь:</legend>
             <p class="recall__name-heading">Представьтесь:</p>
-            <p class="recall__name-item">
-              <label class="recall__name-label" for="first-name">Имя*:</label>
-              <input class="recall__name-input" id="first-name" type="text" placeholder="Петр" required>
-            </p>
-            <p class="recall__name-item">
-              <label class="recall__name-label" for="second-name">Фамилия*:</label>
-              <input class="recall__name-input" id="second-name" type="text" placeholder="Иванов" required>
-            </p>
-            <p class="recall__name-item">
-              <label class="recall__name-label" for="third-name">Отчество:</label>
-              <input class="recall__name-input" id="third-name" type="text" placeholder="Александрович">
-            </p>
+            <ul class="recall__name-list">
+              <li class="recall__name-item">
+                <label class="recall__name-label" for="first-name">Имя*:</label>
+                <input class="recall__name-input" id="first-name" type="text" placeholder="Петр" required>
+              </li>
+              <li class="recall__name-item">
+                <label class="recall__name-label" for="second-name">Фамилия*:</label>
+                <input class="recall__name-input" id="second-name" type="text" placeholder="Иванов" required>
+              </li>
+              <li class="recall__name-item">
+                <label class="recall__name-label" for="third-name">Отчество:</label>
+                <input class="recall__name-input" id="third-name" type="text" placeholder="Александрович">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="recall__contacts-fieldset">
-            <legend class="visually-hidden">Контактная информация:</legend>
-            <p class="recall__contacts-heading">Контактная информация:</p>
-            <p class="recall__contacts-item">
-              <label class="recall__contacts-label" for="phone">Контактный телефон*:</label>
-              <input class="recall__contacts-input" id="phone" type="tel" placeholder="Введите телефон" required>
-            </p>
-            <p class="recall__contacts-item">
-              <label class="recall__contacts-label" for="email">Электронная почта*:</label>
-              <input class="recall__contacts-input" id="email" type="email" placeholder="Введите e-mail" required>
-            </p>
+            <legend class="recall__contacts-heading">Контактная информация:</legend>
+            <ul class="recall__contacts-list">
+              <li class="recall__contacts-item">
+                <label class="recall__contacts-label" for="phone">Контактный телефон*:</label>
+                <input class="recall__contacts-input" id="phone" type="tel" placeholder="Введите телефон" required>
+              </li>
+              <li class="recall__contacts-item">
+                <label class="recall__contacts-label" for="email">Электронная почта*:</label>
+                <input class="recall__contacts-input" id="email" type="email" placeholder="Введите e-mail" required>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="recall__rating-fieldset">
-            <legend class="visually-hidden">Ваше общее впечатление:</legend>
-            <p class="recall__rating-heading">Ваше общее впечатление:</p>
-            <p class="recall__rating-item">
-              <input class="recall__rating-input" type="checkbox" id="positive" name="rating" value="Положительное">
-              <label class="recall__rating-label" for="positive">Скорее положительное</label>
-            </p>
-            <p class="recall__rating-item">
-              <input class="recall__rating-input" type="checkbox" id="negative" name="rating" value="Отрицательное">
-              <label class="recall__rating-label" for="negative">Скорее отрицательное</label>
-            </p>
-            <p class="recall__rating-item">
-              <input class="recall__rating-input" type="checkbox" id="neutral" name="rating" value="Нейтральное">
-              <label class="recall__rating-label" for="neutral">Затрудняюсь ответить</label>
-            </p>
+            <legend class="recall__rating-heading">Ваше общее впечатление:</legend>
+            <ul class="recall__rating-item">
+              <li class="recall__rating-item">
+                <input class="recall__rating-input" type="checkbox" id="positive" name="rating" value="Положительное">
+                <label class="recall__rating-label" for="positive">Скорее положительное</label>
+              </li>
+              <li class="recall__rating-item">
+                <input class="recall__rating-input" type="checkbox" id="negative" name="rating" value="Отрицательное">
+                <label class="recall__rating-label" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="recall__rating-item">
+                <input class="recall__rating-input" type="checkbox" id="neutral" name="rating" value="Нейтральное">
+                <label class="recall__rating-label" for="neutral">Затрудняюсь ответить</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="recall__attractions-fieldset">
-            <legend class="visually-hidden">Посещенные достопримечательности:</legend>
-            <p class="recall__attractions-heading">Посещенные достопримечательности:</p>
-            <p class="recall__attractions-item">
-              <input class="recall__attractions-input" type="radio" id="bridge" name="attractions" value="Мост">
-              <label class="recall__attractions-label" for="bridge">Мост Дьявола</label>
-            </p>
-            <p class="recall__attractions-item">
-              <input class="recall__attractions-input" type="radio" id="hill" name="attractions" value="Гора">
-              <label class="recall__attractions-label" for="hill">Гора-Колокол</label>
-            </p>
-            <p class="recall__attractions-item">
-              <input class="recall__attractions-input" type="radio" id="park" name="attractions" value="Парк">
-              <label class="recall__attractions-label" for="park">Слайд-парк</label>
-            </p>
-            <p class="recall__attractions-item">
-              <input class="recall__attractions-input" type="radio" id="rock" name="attractions" value="Скалы">
-              <label class="recall__attractions-label" for="rock">Красные скалы</label>
-            </p>
+            <legend class="recall__attractions-heading">Посещенные достопримечательности:</legend>
+            <ul class="recall__attractions-list">
+              <li class="recall__attractions-item">
+                <input class="recall__attractions-input" type="radio" id="bridge" name="attractions" value="Мост">
+                <label class="recall__attractions-label" for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="recall__attractions-item">
+                <input class="recall__attractions-input" type="radio" id="hill" name="attractions" value="Гора">
+                <label class="recall__attractions-label" for="hill">Гора-Колокол</label>
+              </li>
+              <li class="recall__attractions-item">
+                <input class="recall__attractions-input" type="radio" id="park" name="attractions" value="Парк">
+                <label class="recall__attractions-label" for="park">Слайд-парк</label>
+              </li>
+              <li class="recall__attractions-item">
+                <input class="recall__attractions-input" type="radio" id="rock" name="attractions" value="Скалы">
+                <label class="recall__attractions-label" for="rock">Красные скалы</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="recall__comment-fieldset">
-            <legend class="visually-hidden">Опишите свои эмоции:</legend>
-            <p class="recall__comment-heading">Опишите свои эмоции:</p>
+            <legend class="recall__comment-heading">Опишите свои эмоции:</legend>
             <textarea class="recall__comment-text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="recall__button" type="submit">Отправить отзыв</button>
+          <div class="recall__footer-wrap">
+            <button class="recall__button" type="submit">Отправить отзыв</button>
+            <p class="recall__required">* — обязательные поля</p>
+          </div>
         </form>
       </section>
 
