@@ -136,6 +136,7 @@
 
 .recall__rating-item {
   display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 23px;
 
@@ -230,5 +231,205 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+}
+
+.recall__required {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .recall {
+    max-width: @tablet-width;
+  }
+
+  .recall__filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  .recall__rating-heading,
+  .recall__name-heading {
+    text-align: left;
+    .font(21px, bold, 26px);
+    width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .recall__name-fieldset {
+    order: 2;
+    width: 265px;
+    height: 330px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding: 0;
+    padding-left: 58px;
+    border-left: 1px solid rgb(219, 219, 219);
+    padding-right: 60px;
+  }
+
+  .recall__contacts-fieldset {
+    order: 3;
+    width: 650px;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+    margin-top: 75px;
+  }
+
+  .recall__contacts-heading {
+    margin: 0;
+    width: 273px;
+    padding: 0 60px;
+    margin-bottom: 32px;
+  }
+
+  .recall__contacts-label {
+    margin-left: 22px;
+  }
+
+  .recall__rating-fieldset {
+    order: 1;
+    width: 324px;
+    height: 330px;
+    padding: 0;
+    border: none;
+    padding-left: 60px;
+  }
+
+  .recall__attractions-fieldset {
+    order: 4;
+    width: 648px;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+    margin-top: 58px;
+  }
+
+  .recall__attractions-heading {
+    width: 273px;
+    padding: 0 60px;
+    margin: 0;
+  }
+
+  .recall__attractions-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .recall__attractions-item {
+    margin: 0;
+    width: 259px;
+  }
+
+  .recall__comment-fieldset {
+    order: 5;
+    width: 648px;
+    border: none;
+    border-top: 1px solid rgb(219, 219, 219);
+    margin-top: 78px;
+    padding: 0;
+  }
+
+  .recall__comment-heading {
+    padding: 0 60px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .recall__comment-text {
+    width: 100%;
+  }
+
+  .recall__button {
+    width: 50%;
+    margin: 0;
+  }
+
+  .recall__required {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .recall__footer-wrap {
+    order: 6;
+    width: 648px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 58px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recall {
+    max-width: @desktop-width;
+  }
+
+  .recall__filter {
+    width: 960px;
+  }
+
+  .recall__rating-fieldset {
+    width: 445px;
+    padding-left: 9px;
+    padding-right: 0;
+  }
+
+  .recall__name-fieldset {
+    width: 400px;
+    padding-left: 80px;
+    padding-right: 0;
+  }
+
+  .recall__contacts-fieldset {
+    width: 960px;
+  }
+
+  .recall__contacts-list {
+    display: flex;
+  }
+
+  .recall__contacts-item {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+  }
+
+  .recall__contacts-label {
+    margin: 0;
+    margin-right: 16px;
+  }
+
+  .recall__attractions-fieldset {
+    width: 960px;
+  }
+
+  .recall__attractions-item {
+    width: 240px;
+  }
+
+  .recall__comment-fieldset {
+    width: 960px;
+  }
+
+  .recall__footer-wrap {
+    width: 960px;
   }
 }
