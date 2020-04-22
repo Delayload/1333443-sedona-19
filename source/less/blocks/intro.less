@@ -1,9 +1,8 @@
 .intro {
-  padding-top: 43px;
-  width: 276px;
+  padding-top: 40px;
+  width: auto;
   padding-bottom: 10px;
   .font-ptsans();
-  max-width: @mobile-width;
   margin: 0 auto;
 }
 
@@ -12,8 +11,9 @@
   color: @main-text-color;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 31px;
+  margin: 0 auto;
+  width: 81.25%;
+  margin-bottom: 27px;
 }
 
 .intro__text {
@@ -21,24 +21,24 @@
   color: @main-text-color;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
+  width: 81.25%;
 }
 
 @media (min-width: @tablet-width) {
   .intro {
     padding-top: 51px;
     padding-bottom: 55px;
-    width: 490px;
-    height: 100px;
-    max-width: @tablet-width;
   }
 
   .intro__heading {
     .font(21px, bold, 26px);
+    width: 428px;
   }
 
   .intro__text {
     .font(14px, normal, 26px);
+    width: 428px;
   }
 }
 
