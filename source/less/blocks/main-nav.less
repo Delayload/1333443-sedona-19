@@ -186,12 +186,25 @@
     &:nth-of-type(3) {
       display: block;
     }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: #000000;
+    }
   }
 
   .main-nav__link {
     .font(14px, bold, 26px);
     color: black;
     padding: 15px 0;
+
+    &:hover {
+      color: #81b3d2;
+    }
   }
 
   .main-nav__toggle {
