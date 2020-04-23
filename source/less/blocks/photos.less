@@ -1,6 +1,5 @@
 .photos {
   .font-ptsans();
-  max-width: @mobile-width;
   margin: 0 auto;
 }
 
@@ -55,6 +54,10 @@
 
 .photos__img-mobile {
   display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background-size: cover;
 }
 
 .photos__img-tablet {
@@ -66,17 +69,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photos {
-    max-width: @tablet-width;
-  }
-
   .photos__img-tablet {
     display: block;
-    width: 324px;
-    height: 267px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
   }
 
   .photos__img-mobile {
@@ -92,7 +89,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0 auto;
-    width: 648px;
+    width: 84.37%;
   }
 
   .photos__item {
@@ -100,25 +97,16 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     position: relative;
-    width: 324px;
-    padding-top: 265px;
+    width: 50%;
     border: none;
-
-    &:first-of-type {
-      width: 648px;
-      padding-top: 400px;
-    }
   }
 
-  .photos__item:first-of-type .photos__img-tablet {
-    width: 648px;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .photos__item:first-of-type {
+    width: 100%;
   }
 
   .photos__item-wrap {
@@ -139,41 +127,30 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photos {
-    max-width: @desktop-width;
-  }
-
   .photos__img-tablet {
     display: none;
   }
 
   .photos__img-desktop {
     display: block;
-    width: 400px;
-    height: 267px;
+    width: 100%;
+    height: auto;
     position: relative;
   }
 
   .photos__list {
-    width: 1200px;
+    width: 100%;
   }
 
   .photos__item {
-    width: 400px;
+    width: 33.33%;
     padding-top: 0;
-
-    &:first-of-type {
-      padding-top: 0;
-      width: 1200px;
-      height: 400px;
-    }
   }
 
-  .photos__item:first-of-type .photos__img-desktop {
-    width: 1200px;
-    height: 400px;
-    position: relative;
-    z-index: 1;
+  .photos__item:first-of-type {
+    padding-top: 0;
+    width: 100%;
+    height: auto;
   }
 
   .photos__item-wrap {

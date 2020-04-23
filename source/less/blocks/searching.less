@@ -1,6 +1,5 @@
 .searching {
   .font-ptsans();
-  max-width: @mobile-width;
   margin: 0 auto;
 }
 
@@ -29,8 +28,10 @@
   border: none;
   background-color: @background-color;
   padding: 17px 26px;
-  margin: 0 20px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 49px;
+  width: 87.5%;
 
   &:hover {
     background-color: #669ec0;
@@ -67,6 +68,9 @@
 
 .searching__map-container {
   position: relative;
+  display: block;
+  width: 320px;
+  margin: 0 auto;
 
   &::after {
     position: absolute;
