@@ -75,8 +75,6 @@
 
 .recall__name-input {
   width: 100%;
-  border: none;
-  background-color: @input-color;
   padding: 12px 0;
   padding-left: 22px;
   border: 4px solid #f2f2f2;
@@ -153,8 +151,6 @@
 .recall__contacts-input {
   padding: 12px 0;
   padding-left: 17px;
-  border: none;
-  background-color: @input-color;
   padding-right: 22px;
   border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
@@ -268,7 +264,6 @@
   height: 56px;
   margin: 0;
   position: relative;
-  //visibility: hidden;
 
   &::before {
     position: absolute;
@@ -281,7 +276,7 @@
 
   &:checked {
     &::before {
-      background: #f2f2f2 url(../img/icon-tick.svg) no-repeat 50% 50%;
+      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%;
     }
   }
 
@@ -292,20 +287,21 @@
 
     &:checked {
       &::before {
-        background: #e5e5e5 url(../img/icon-tick.svg) no-repeat 50% 50%;
+        background: #e5e5e5 url("../img/icon-tick.svg") no-repeat 50% 50%;
       }
     }
   }
 
   &:active {
     opacity: 0.3;
+
     &::before {
       background: #d5d5d5;
     }
 
     &:checked {
       &::before {
-        background: #d5d5d5 url(../img/icon-tick.svg) no-repeat 50% 50%;
+        background: #d5d5d5 url("../img/icon-tick.svg") no-repeat 50% 50%;
       }
     }
   }
@@ -385,7 +381,7 @@
 
 .popup--show {
   display: block;
-  animation: bounce .6s;
+  animation: bounce 0.6s;
 }
 
 .popup--hide {
@@ -394,7 +390,7 @@
 
 .popup-success__text-container {
   padding: 40px 20px 30px;
-  background: #fff;
+  background: #ffffff;
   text-align: center;
 }
 
@@ -463,6 +459,7 @@
   .recall__name-input {
     padding-left: 19px;
   }
+
   .recall__contacts-fieldset {
     order: 3;
     width: 84.63%;
@@ -544,7 +541,7 @@
   }
 
   .recall__attractions-label {
-    padding-left:  24px;
+    padding-left: 24px;
   }
 
   .recall__comment-fieldset {
@@ -619,6 +616,7 @@
   .recall__name-input {
     padding-left: 17px;
   }
+
   .recall__rating-fieldset {
     width: 476px;
   }
@@ -631,8 +629,6 @@
     padding-left: 18px;
   }
 
-
-
   .recall__contacts-fieldset {
     width: 960px;
     margin-top: 34px;
@@ -640,7 +636,7 @@
 
   .recall__contacts-heading {
     margin-bottom: 75px;
-}
+  }
 
   .recall__contacts-wrap {
     display: flex;
@@ -655,11 +651,10 @@
     margin: 0;
   }
 
-
-
   .recall__contacts-label {
     margin: 0;
     margin-right: 18px;
+
     &--desktop {
       display: block;
       margin: 0;
