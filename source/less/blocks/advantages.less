@@ -99,6 +99,11 @@
     position: absolute;
     content: "";
     background-image: url("../img/photo-bridge-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-bridge-mobile@2x.jpg");
+    }
+
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -127,6 +132,11 @@
     position: absolute;
     content: "";
     background-image: url("../img/main-city-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-mobile@2x.jpg");
+    }
+
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
@@ -243,6 +253,11 @@
           position: absolute;
           content: "";
           background-image: url("../img/main-bridge-tablet@1x.jpg");
+
+          @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url("../img/main-bridge-tablet@2x.jpg");
+          }
+
           background-size: cover;
           top: 0;
           width: 66.66%;
@@ -280,6 +295,11 @@
       position: absolute;
       content: "";
       background-image: url("../img/main-city-tablet@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/main-city-tablet@2x.jpg");
+      }
+
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: cover;
@@ -384,6 +404,11 @@
   .advantages__item--blue:first-of-type .advantages__text::before {
 
     background-image: url("../img/main-city-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
+    }
+
     background-repeat: no-repeat;
     height: 279px;
     background-position-y: -71px;
@@ -402,6 +427,11 @@
 
   .advantages__item--blue:nth-of-type(2)::after {
     background-image: url("../img/main-bridge-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+    }
+
     background-repeat: no-repeat;
     width: 800px;
     height: 256px;
